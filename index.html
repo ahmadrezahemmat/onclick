@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 350px;
+            height: 350px;
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            padding-top: 45px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            color: cadetblue;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            cursor: pointer;
+
+
+        }
+        button:hover{
+            background-color: cadetblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="on1">on</button>
+        <img src="./pic_bulboff.gif" alt="on">
+        <button id="off2">off</button>
+    </div>
+    <script>
+        let on1 = document.getElementById("on1");
+        let off2 = document.getElementById("off2");
+        let img = document.querySelector("img");
+        on1.addEventListener("click",()=>{
+            img.src = "./pic_bulbon.gif";
+
+        } ) 
+        off2.addEventListener("click",()=>{
+            img.src = "./pic_bulboff.gif";
+        });
+           
+        
+        
+
+        
+
+    </script>
+</body>
+</html>
